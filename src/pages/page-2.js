@@ -1,12 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 
-const SecondPage = () => (
+const SecondPage = props => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Page two" location={props.location} />
   </Layout>
 )
 

@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
+    lang: "ja",
     title: `Zero Base Management Holdings`,
+    siteUrl: "https://zbmh.co.jp",
     description: `Description from gatsby-config`,
-    author: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

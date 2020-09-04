@@ -1,8 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { ThemeProvider } from "styled-components"
 
 import Header from "./Header"
 import Footer from "./Footer"
+
+import theme from "../styles/theme"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,11 +21,11 @@ const Layout = ({ children }) => {
   const { title } = data.site.siteMetadata
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header siteTitle={title} />
       <main>{children}</main>
       <Footer siteTitle={title} />
-    </>
+    </ThemeProvider>
   )
 }
 

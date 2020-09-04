@@ -1,7 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 
-const Wrap = styled.header``
+// const s = props => props.theme.media.s
+
+const Wrap = styled.header`
+  height: 65px;
+  @media (min-width: 480px) {
+    height: 74px;
+  }
+`
 
 const Header = ({ siteTitle }) => (
   <Wrap>
