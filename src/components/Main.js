@@ -5,6 +5,7 @@ import styled from "styled-components"
 const headerHeightS = props => props.theme.headerHeight.s
 const headerHeightM = props => props.theme.headerHeight.m
 const mediaS = props => props.theme.media.s
+const container = props => props.theme.container.main
 
 const Wrap = styled.main`
   padding-top: ${headerHeightS};
@@ -13,6 +14,16 @@ const Wrap = styled.main`
   }
 `
 
-const Main = ({ children }) => <Wrap>{children}</Wrap>
+const Container = styled.div`
+  margin: auto;
+  max-width: ${container};
+  padding: 0 10px;
+`
+
+const Main = ({ children }) => (
+  <Wrap>
+    <Container>{children}</Container>
+  </Wrap>
+)
 
 export default Main
