@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ pageTitle, pageDescription, pageMeta, location }) {
+function Seo({ pageTitle, pageDescription, location }) {
   const { site } = useStaticQuery(graphql`
     query {
       site {
