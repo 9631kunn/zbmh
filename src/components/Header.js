@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Image from "./Image"
@@ -39,11 +40,13 @@ const Container = styled.div`
 const Header = ({ siteTitle }) => (
   <Wrap>
     <Container>
-      <Image
-        filename="logo__pc.png"
-        className="logo"
-        alt={siteTitle + " ロゴ"}
-      />
+      <Link to="/">
+        <Image
+          filename="logo__pc.png"
+          className="logo"
+          alt={siteTitle + " ロゴ"}
+        />
+      </Link>
     </Container>
   </Wrap>
 )

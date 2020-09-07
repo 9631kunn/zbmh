@@ -1,6 +1,9 @@
 import React from "react"
 
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
+import fadeIn from "../../styles/animation/fadeIn"
+import gradAnimation from "../../styles/animation/gradAnimation"
+import progressBar from "../../styles/animation/progressBar"
 import "typeface-abel"
 import "typeface-noto-serif-jp"
 import "typeface-permanent-marker"
@@ -61,34 +64,6 @@ const Wrap = styled.div`
     }
   }
 `
-
-const fadeIn = keyframes`
-  100%{opacity: 1; transform: none;}
-`
-
-const gradAnimation = keyframes`
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-`
-
-const progressBar = keyframes`
-	0% {
-		left: 0;
-		width: 0;
-	}
-	60% {
-		left: 0;
-		width: 100%;
-	}
-	61% {
-		left: 0;
-		width: 100%;
-	}
-	100% {
-		left: 100%;
-		width: 0;
-	}`
 
 const Heading = styled.h2`
   margin-block-end: 80px;

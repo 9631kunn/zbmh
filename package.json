@@ -19,6 +19,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "react-use": "^15.3.4",
     "styled-components": "^5.1.1",
     "typeface-abel": "^0.0.72",
     "typeface-alata": "^1.1.3",

@@ -16,6 +16,7 @@ const Container = styled.div`
   width: 100%;
   small {
     color: #fff;
+    font-size: 12px;
   }
 `
 
