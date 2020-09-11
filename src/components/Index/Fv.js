@@ -6,9 +6,6 @@ import gradAnimation from "../../styles/animation/gradAnimation"
 import progressBar from "../../styles/animation/progressBar"
 import "typeface-abel"
 import "typeface-noto-serif-jp"
-import "typeface-permanent-marker"
-import "typeface-nothing-you-could-do"
-import "typeface-alata"
 
 const mediaS = props => props.theme.media.s
 const mediaM = props => props.theme.media.m
