@@ -1,5 +1,7 @@
 import React from "react"
 
+import Image from "../Image"
+
 import styled from "styled-components"
 import fadeIn from "../../styles/animation/fadeIn"
 import gradAnimation from "../../styles/animation/gradAnimation"
@@ -149,19 +151,28 @@ const Grid = styled.div`
   @media (min-width: ${mediaS}) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @media (min-width: ${mediaM}) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
   div {
     animation: ${fadeIn} 0.5s forwards;
     border: 1px solid #efefef;
     height: 100px;
+    max-width: 180px;
     opacity: 0;
     position: relative;
     transform: translateY(2px);
     width: 100%;
-    &::before {
-      content: "LOGO";
+    a {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      img {
+        max-width: calc(100% - 10px);
+        width: 100%;
+      }
+    }
+    &.coming::before {
+      content: "Coming soon...";
       display: inline-block;
       font: bold italic 16px ${deco};
       left: 50%;
@@ -204,7 +215,6 @@ const Fv = () => (
     <Heading>
       <span>ZBMHD Group</span>
     </Heading>
-    {/* <LeadTitle>経営方針</LeadTitle> */}
     <Lead>
       既存の枠組みに囚われず、柔軟な発想を前提とした商品・サービスの開発を、
       <br className="tab__none" />
@@ -215,15 +225,24 @@ const Fv = () => (
       」の発想を大切にしていきます。
     </Lead>
     <Grid>
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
+      <div>
+        <a href="https://career-m.co.jp/">
+          <img src="/group-logo/career_m-logo.png" alt="" />
+        </a>
+      </div>
+      <div>
+        <a href="https://npartners.co.jp/">
+          <img src="/group-logo/npartners-logo.png" />
+        </a>
+      </div>
+      <div>
+        <a href="https://plaviswork.co.jp/">
+          <img src="/group-logo/plaviswork-logo.png" />
+        </a>
+      </div>
+      <div className="coming" />
+      <div className="coming" />
+      <div className="coming" />
     </Grid>
   </Wrap>
 )
