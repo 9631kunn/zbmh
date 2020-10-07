@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     lang: "ja",
-    title: `株式会社ゼロベースマネージメントホールディングス`,
+    title: `株式会社ゼロベースマネジメントホールディングス`,
     siteUrl: "https://zbmh.co.jp",
     description: `Description from gatsby-config`,
-    companyName: "株式会社ゼロベースマネージメントホールディングス",
+    companyName: "株式会社ゼロベースマネジメントホールディングス",
     founder: "太田　吉信", // 創業者名
     foundingDate: "平成31年1月21日", // 設立日
     telephone: "", // 電話番号（先頭に"+81-"）
