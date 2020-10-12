@@ -3,16 +3,16 @@ module.exports = {
     lang: "ja",
     title: `株式会社ゼロベースマネジメントホールディングス`,
     siteUrl: "https://zbmh.co.jp",
-    description: `Description from gatsby-config`,
+    description: `株式会社ゼロベースマネジメントホールディングスの公式ホームページです。`,
     companyName: "株式会社ゼロベースマネジメントホールディングス",
     founder: "太田　吉信", // 創業者名
-    foundingDate: "平成31年1月21日", // 設立日
+    foundingDate: "平成31年10月2日", // 設立日
     telephone: "", // 電話番号（先頭に"+81-"）
     faxNumber: "", // FAX番号（先頭に"+81-"）
-    addressLocality: "ほげ区", // 市町村区
+    addressLocality: "北区", // 市町村区
     addressRegion: "東京都", // 都道府県
-    postalCode: "000-0000", // 郵便番号
-    streetAddress: "仮住所", // 番地
+    postalCode: "115-0045", // 郵便番号
+    streetAddress: "赤羽2－39－5", // 番地
     addressCountry: "JP",
     copyrightYear: "2020-09-07T00:00:00+0000",
   },

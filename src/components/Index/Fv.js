@@ -1,7 +1,5 @@
 import React from "react"
 
-import Image from "../Image"
-
 import styled from "styled-components"
 import fadeIn from "../../styles/animation/fadeIn"
 import gradAnimation from "../../styles/animation/gradAnimation"
@@ -232,12 +230,12 @@ const Fv = () => (
       </div>
       <div>
         <a href="https://npartners.co.jp/">
-          <img src="/group-logo/npartners-logo.png" />
+          <img src="/group-logo/npartners-logo.png" alt="" />
         </a>
       </div>
       <div>
         <a href="https://plaviswork.co.jp/">
-          <img src="/group-logo/plaviswork-logo.png" />
+          <img src="/group-logo/plaviswork-logo.png" alt="" />
         </a>
       </div>
       <div className="coming" />
