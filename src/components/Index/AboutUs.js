@@ -1,14 +1,20 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+
 import styled from "styled-components"
 
+import Heading from "../Heading"
+
+const mainColor = props => props.theme.color.main
+const deco = props => props.theme.font.deco
 const serif = props => props.theme.font.serif
 
 const Wrap = styled.div`
   margin: 80px 0;
   width: 100%;
   h2 {
-    font: 2em ${serif};
+    color: ${mainColor};
+    font: bold italic 30px ${deco};
     margin-block-end: 40px;
   }
 `
@@ -52,7 +58,9 @@ const AboutUs = () => {
 
   return (
     <Wrap>
-      <h2>会社概要</h2>
+      <Heading>
+        <span>About Us</span>
+      </Heading>
       <Table>
         <tbody>
           <tr>

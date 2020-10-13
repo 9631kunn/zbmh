@@ -1,24 +1,21 @@
 import React from "react"
 import Form from "../Form"
+import Heading from "../Heading"
 
 import styled from "styled-components"
-
-const serif = props => props.theme.font.serif
 
 const Wrap = styled.div`
   margin: 80px 0;
   width: 100%;
-  h2 {
-    font: 2em ${serif};
-    margin-block-end: 40px;
-  }
 `
 
 const Contact = () => (
   <Wrap>
-    <h2>お問い合わせ</h2>
+    <Heading>
+      <span>Contact</span>
+    </Heading>
     <Form
-      src="https://career-m.co.jp/_form/recruitment/"
+      src="https://zbmhd.co.jp/_form/"
       title="求人フォーム"
       height="700" // error message用にやや大きく
       spHeight="1000" // error message用にやや大きく
