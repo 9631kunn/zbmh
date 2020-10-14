@@ -5,6 +5,7 @@ import Seo from "../components/Seo"
 import Fv from "../components/Index/Fv"
 import AboutUs from "../components/Index/AboutUs"
 import Contact from "../components/Index/Contact"
+import Info from "../components/Index/Info"
 
 const IndexPage = props => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = props => (
     <Fv />
     <AboutUs />
     <Contact />
+    <Info />
   </Layout>
 )
 

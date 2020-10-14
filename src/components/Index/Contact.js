@@ -18,7 +18,7 @@ const Contact = () => (
       src="https://zbmhd.co.jp/_form/"
       title="求人フォーム"
       height="700" // error message用にやや大きく
-      spHeight="1000" // error message用にやや大きく
+      spHeight="1100" // error message用にやや大きく
     />
   </Wrap>
 )
