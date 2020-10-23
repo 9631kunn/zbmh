@@ -10,7 +10,7 @@ const serif = (props) => props.theme.font.serif;
 
 const Wrap = styled.div`
   font-family: ${serif};
-  margin: 80px 0;
+  margin: 40px 0;
   padding-block-end: 40px;
   @media (min-width: ${mediaS}) {
     padding-block-end: 50px;
@@ -23,7 +23,10 @@ const Description = styled.div`
   margin-block-end: 80px;
   h2 {
     color: ${mainColor};
-    margin: 60px 0 20px;
+    margin-block-end: 20px;
+  }
+  p {
+    margin-block-end: 40px;
   }
 `;
 const FlowWrap = styled.div`

@@ -28,6 +28,10 @@ const Table = styled.table`
   }
   td {
     padding: 1em;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 `;
 const Map = styled.div`
@@ -56,11 +60,22 @@ const AboutUs = () => {
           addressRegion
           addressLocality
           streetAddress
+          telephone
+          telephone2
         }
       }
     }
   `);
-  const { title, founder, postalCode, addressRegion, addressLocality, streetAddress } = data.site.siteMetadata;
+  const {
+    title,
+    founder,
+    postalCode,
+    addressRegion,
+    addressLocality,
+    streetAddress,
+    telephone,
+    telephone2,
+  } = data.site.siteMetadata;
 
   return (
     <Wrap>
@@ -74,11 +89,17 @@ const AboutUs = () => {
             <td>{title}</td>
           </tr>
           <tr>
-            <th>住所</th>
+            <th>本社</th>
             <td>〒{postalCode + ' ' + addressRegion + addressLocality + streetAddress}</td>
           </tr>
           <tr>
-            <th>事業所住所</th>
+            <th>電話番号</th>
+            <td>
+              <a href={`tel:${telephone}`}>{telephone2}</a>
+            </td>
+          </tr>
+          <tr>
+            <th>池袋オフィス</th>
             <td>〒171-0014 東京都豊島区池袋2丁目17-8 池袋西口 ANNEX2階</td>
           </tr>
           <tr>
@@ -87,11 +108,7 @@ const AboutUs = () => {
           </tr>
           <tr>
             <th>取締役</th>
-            <td>宮本正樹</td>
-          </tr>
-          <tr>
-            <th>取引先銀行</th>
-            <td>みずほ銀行、三井住友銀行、巣鴨信用金庫、ジャパンネット銀行</td>
+            <td>宮本　正樹</td>
           </tr>
           <tr>
             <th>顧問</th>
