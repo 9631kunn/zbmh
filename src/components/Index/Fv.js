@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react';
 
-import styled from "styled-components"
-import fadeIn from "../../styles/animation/fadeIn"
+import styled from 'styled-components';
+import fadeIn from '../../styles/animation/fadeIn';
 
-import Heading from "../Heading"
+import Heading from '../Heading';
 
-const mediaS = props => props.theme.media.s
-const mediaM = props => props.theme.media.m
-const mainColor = props => props.theme.color.main
-const serif = props => props.theme.font.serif
-const deco = props => props.theme.font.deco
+const mediaS = (props) => props.theme.media.s;
+const mediaM = (props) => props.theme.media.m;
+const mainColor = (props) => props.theme.color.main;
+const serif = (props) => props.theme.font.serif;
+const deco = (props) => props.theme.font.deco;
 
 const Wrap = styled.div`
   margin: 80px 0;
@@ -27,7 +27,7 @@ const Wrap = styled.div`
     /* 背景の大きな文字部分 */
     font: bold italic 70px ${serif};
     color: #efefef;
-    content: "Zero Base Management Holdings";
+    content: 'Zero Base Management Holdings';
     left: 0;
     line-height: 1.1;
     opacity: 0.2;
@@ -43,7 +43,7 @@ const Wrap = styled.div`
     /* メインエリアの最終部分 */
     bottom: 0;
     color: #efefef;
-    content: "ZBMHD Group";
+    content: 'ZBMHD Group';
     display: inline-block;
     font: bold italic 30px ${deco};
     line-height: 1;
@@ -57,7 +57,7 @@ const Wrap = styled.div`
       font-size: 40px;
     }
   }
-`
+`;
 
 const Lead = styled.p`
   animation: ${fadeIn} 1s 1.8s forwards;
@@ -76,7 +76,7 @@ const Lead = styled.p`
   span {
     color: ${mainColor};
   }
-`
+`;
 
 const Grid = styled.div`
   display: grid;
@@ -109,7 +109,7 @@ const Grid = styled.div`
       }
     }
     &.coming::before {
-      content: "Coming soon...";
+      content: 'Coming soon...';
       display: inline-block;
       font: bold italic 16px ${deco};
       left: 50%;
@@ -145,7 +145,7 @@ const Grid = styled.div`
       animation-delay: 3.8s;
     }
   }
-`
+`;
 
 const Fv = () => (
   <Wrap>
@@ -163,11 +163,6 @@ const Fv = () => (
     </Lead>
     <Grid>
       <div>
-        <a href="https://career-m.co.jp/">
-          <img src="/group-logo/career_m-logo.png" alt="" />
-        </a>
-      </div>
-      <div>
         <a href="https://npartners.co.jp/">
           <img src="/group-logo/npartners-logo.png" alt="" />
         </a>
@@ -177,11 +172,16 @@ const Fv = () => (
           <img src="/group-logo/plaviswork-logo.png" alt="" />
         </a>
       </div>
+      <div>
+        <a href="https://career-m.co.jp/">
+          <img src="/group-logo/career_m-logo.png" alt="" />
+        </a>
+      </div>
       <div className="coming" />
       <div className="coming" />
       <div className="coming" />
     </Grid>
   </Wrap>
-)
+);
 
-export default Fv
+export default Fv;
