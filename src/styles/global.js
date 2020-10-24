@@ -1,6 +1,10 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  html{
+    scroll-behavior: smooth;
+
+  }
   *{
     box-sizing: border-box;
     margin: 0;
@@ -24,6 +28,6 @@ const GlobalStyle = createGlobalStyle`
       display: none;
     }
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

@@ -1,13 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-import Image from "./Image"
+import Image from './Image';
 
-const headerHeightS = props => props.theme.headerHeight.s
-const headerHeightM = props => props.theme.headerHeight.m
-const mediaS = props => props.theme.media.s
-const container = props => props.theme.container.header
+const headerHeightS = (props) => props.theme.headerHeight.s;
+const headerHeightM = (props) => props.theme.headerHeight.m;
+const mediaS = (props) => props.theme.media.s;
+const container = (props) => props.theme.container.header;
 
 const Wrap = styled.header`
   backdrop-filter: blur(8px);
@@ -22,7 +22,7 @@ const Wrap = styled.header`
     height: ${headerHeightM};
     padding: 25px 0 10px;
   }
-`
+`;
 
 const Container = styled.div`
   margin: auto;
@@ -35,20 +35,16 @@ const Container = styled.div`
       width: 210px;
     }
   }
-`
+`;
 
 const Header = ({ siteTitle }) => (
-  <Wrap>
+  <Wrap id="top">
     <Container>
       <Link to="/">
-        <Image
-          filename="logo__pc.png"
-          className="logo"
-          alt={siteTitle + " ロゴ"}
-        />
+        <Image filename="logo__pc.png" className="logo" alt={siteTitle + ' ロゴ'} />
       </Link>
     </Container>
   </Wrap>
-)
+);
 
-export default Header
+export default Header;
