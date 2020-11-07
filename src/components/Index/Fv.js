@@ -177,7 +177,11 @@ const Fv = () => (
           <img src="/group-logo/career_m-logo.png" alt="" />
         </a>
       </div>
-      <div className="coming" />
+      <div>
+        <a href="https://bizp.co.jp/">
+          <img src="/group-logo/bp-logo.png" alt="" />
+        </a>
+      </div>
       <div className="coming" />
       <div className="coming" />
     </Grid>

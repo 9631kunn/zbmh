@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react';
 
-import Image from "../Image"
+import Image from '../Image';
 
-import styled from "styled-components"
+import styled from 'styled-components';
 
-const media = props => props.theme.media.m
-const serif = props => props.theme.font.serif
+const media = (props) => props.theme.media.m;
+const serif = (props) => props.theme.font.serif;
 
 const Wrap = styled.div`
   align-items: center;
@@ -35,27 +35,15 @@ const Wrap = styled.div`
       width: 70px !important;
     }
   }
-`
+`;
 
 const Info = () => (
   <Wrap>
-    <Image
-      filename="leagal.png"
-      className="leagal"
-      alt="ベリーベスト法律事務所ロゴ"
-    />
-    <p>
-      株式会社キャリア未来図はベリーベスト法律事務所と顧問契約を締結してます。
-    </p>
-    <Image
-      filename="npo.jpg"
-      className="npo"
-      alt="認定特定非営利活動法人カタリバロゴ"
-    />
-    <p>
-      株式会社キャリア未来図は認定特定非営利活動法人カタリバの活動を支援しています。
-    </p>
+    <Image filename="leagal.png" className="leagal" alt="ベリーベスト法律事務所ロゴ" />
+    <p>株式会社ゼロベースマネジメントホールディングスはベリーベスト法律事務所と顧問契約を締結してます。</p>
+    <Image filename="npo.jpg" className="npo" alt="認定特定非営利活動法人カタリバロゴ" />
+    <p>株式会社ゼロベースマネジメントホールディングスは認定特定非営利活動法人カタリバの活動を支援しています。</p>
   </Wrap>
-)
+);
 
-export default Info
+export default Info;
